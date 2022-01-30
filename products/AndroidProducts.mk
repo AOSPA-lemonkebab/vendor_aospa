@@ -15,9 +15,13 @@
 # Product Makefiles
 PRODUCT_MAKEFILES += \
     $(LOCAL_DIR)/oneplus9/aospa_oneplus9.mk \
-    $(LOCAL_DIR)/oneplus9pro/aospa_oneplus9pro.mk
+    $(LOCAL_DIR)/oneplus9pro/aospa_oneplus9pro.mk \
+    $(LOCAL_DIR)/lemonkebab/aospa_lemonkebab.mk \
+    $(LOCAL_DIR)/RMX1851/aospa_RMX1851.mk
 
 # Lunch targets
 COMMON_LUNCH_CHOICES += \
     aospa_oneplus9-userdebug \
-    aospa_oneplus9pro-userdebug
+    aospa_oneplus9pro-userdebug \
+    aospa_lemonkebab-userdebug \
+    aospa_RMX1851-userdebug
