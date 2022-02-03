@@ -25,7 +25,8 @@ SOONG_CONFIG_aospaGlobalVars += \
     target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib \
     uses_camera_parameter_lib \
-    uses_qti_camera_device
+    uses_qti_camera_device \
+    supports_extended_compress_format \
 
 # Set default values
 TARGET_INIT_VENDOR_LIB ?= vendor_init
@@ -41,6 +42,7 @@ SOONG_CONFIG_aospaGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEE
 SOONG_CONFIG_aospaGlobalVars_uses_camera_parameter_lib := $(TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY)
 SOONG_CONFIG_aospaGlobalVars_needs_camera_boottime := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 SOONG_CONFIG_aospaGlobalVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
+SOONG_CONFIG_aospaGlobalVars_supports_extended_compress_format := $(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)
 
 # Gestures
 define add-gesturevar-if-exist
